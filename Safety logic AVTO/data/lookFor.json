@@ -1,0 +1,8 @@
+[
+{ "generator": "water", "thing": "fish", "condition": "place:sand,in_use:fishingRod," },
+{ "generator": "water", "thing": "seaWeed" },
+{ "generator": "sand", "thing": "stone"  },
+{ "generator": "grass", "thing": "stone"  },
+{ "generator": "forest", "thing": "driedUpTree"  },
+{ "generator": "driedUpTree", "thing": "branch"  }
+]

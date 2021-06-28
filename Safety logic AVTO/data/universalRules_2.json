@@ -1,0 +1,26 @@
+[
+    {
+        "beforeItems": "make,branch,stone,rope,",
+        "afterItems": "axe,"
+    },
+    {
+        "beforeItems": "move,sand,",
+        "afterItems": "sand,"
+    },
+    {
+        "beforeItems": "move,sand,",
+        "afterItems": "mountain,"
+    },
+    {
+        "beforeItems": "search,water,",
+        "afterItems": "seaWeed,"
+    },
+    {
+        "beforeItems": "move,mountain,",
+        "afterItems": "sand,"
+    },
+    {
+        "beforeItems": "search,sand,",
+        "afterItems": "stone,"
+    }
+]

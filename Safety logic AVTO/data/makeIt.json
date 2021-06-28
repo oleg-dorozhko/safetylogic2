@@ -1,0 +1,5 @@
+[
+{ "makeSet": ["branch","stone","seaWeed"], "resultIt": "axe" },
+{ "makeSet": ["branch","fishBone","seaWeed"], "resultIt": "fishingRod" },
+{ "makeSet": ["seaWeed"], "resultIt": "rope" }
+]

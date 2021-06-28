@@ -1,0 +1,6 @@
+[
+{"name":"time","qty":2000,"alt":"время"},
+{"name":"gold","qty":10,"alt":"золото"},
+{"name":"oxygen","qty":5,"alt":"кислород"},
+{"name":"satiety","qty":100,"alt":"сытость"}
+]

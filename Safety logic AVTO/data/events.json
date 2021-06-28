@@ -1,0 +1,6 @@
+[
+{"eventId":"sand_movement","itId1":"sand","itId2":"sand"},
+{"eventId":"water_movement","itId1":"water","itId2":"water"},
+{"eventId":"sand_water_movement","itId1":"sand","itId2":"water"},
+{"eventId":"seaWeed_movement","itId1":"seaWeed","itId2":"seaWeed"}
+]

@@ -1,0 +1,177 @@
+[
+    {
+        "id": "5ef0d0546bb14bfc7f52b9f73068aec2",
+        "enLocaleName": "border",
+        "color": "0,0,0",
+        "color2": "0,0,0",
+        "firstLocaleName": "рамка"
+    },
+    {
+        "id": "3e007c0b49e18c8f810d9a88d92d0658",
+        "enLocaleName": "stone",
+        "color": "130,130,130",
+        "color2": "130,130,130",
+        "firstLocaleName": "камень"
+    },
+    {
+        "id": "dc47104460d4586c5ee6c912ee55ce6b",
+        "enLocaleName": "driedUpTree",
+        "color": "150,75,0",
+        "color2": "150,75,0",
+        "firstLocaleName": "сухое дерево"
+    },
+    {
+        "id": "16743e80d10ee68016b95e0b3682ff8c",
+        "enLocaleName": "water",
+        "color": "0,0,255",
+        "color2": "0,0,255",
+        "firstLocaleName": "вода"
+    },
+    {
+        "id": "7549b106321296b5e68f6739d15c09a9",
+        "enLocaleName": "branch",
+        "color": "51,0,0",
+        "color2": "51,0,0",
+        "firstLocaleName": "ветка"
+    },
+    {
+        "id": "4ff8cefb2c345f4079082ddb8cd9360e",
+        "enLocaleName": "bananaTree",
+        "color": "255,255,0",
+        "color2": "0,255,0",
+        "firstLocaleName": "банановое дерево"
+    },
+    {
+        "id": "bbff0b1f8c03ca226ba048b0a1f6abb0",
+        "enLocaleName": "banana",
+        "color": "255,255,0",
+        "color2": "255,255,0",
+        "firstLocaleName": "банан"
+    },
+    {
+        "id": "1acf716b384ad31524e854f89927dbda",
+        "enLocaleName": "fishingRod",
+        "color": "0,50,0",
+        "color2": "0,50,0",
+        "firstLocaleName": "удочка"
+    },
+    {
+        "id": "ec4ec1e425e991c0b8cd1de32e56db0a",
+        "enLocaleName": "fishBone",
+        "color": "254,255,254",
+        "color2": "254,255,254",
+        "firstLocaleName": "рыбья кость"
+    },
+    {
+        "id": "f71b1d337f7a749ba95edf394c49abda",
+        "enLocaleName": "rope",
+        "color": "240,240,240",
+        "color2": "220,220,220",
+        "firstLocaleName": "веревка"
+    },
+    {
+        "id": "0139fa5cba0fe5832abb4ca4e60706cc",
+        "enLocaleName": "seaWeed",
+        "color": "0,253,0",
+        "color2": "0,253,0",
+        "firstLocaleName": "водоросли"
+    },
+    {
+        "id": "309f280e4c9f8b6a1b3f841aeb25341f",
+        "enLocaleName": "fish",
+        "color": "196,202,206",
+        "color2": "156,157,159",
+        "firstLocaleName": "рыба"
+    },
+    {
+        "id": "d9483257ab98bc2e4f7fb1ede5923ac7",
+        "enLocaleName": "axe",
+        "color": "211,211,211",
+        "color2": "192,192,192",
+        "firstLocaleName": "топор"
+    },
+    {
+        "id": "2d27e0472b113da9d7243a9110b94b33",
+        "enLocaleName": "forest",
+        "color": "0,128,0",
+        "color2": "0,128,0",
+        "firstLocaleName": "лес"
+    },
+    {
+        "id": "dbc8cc248025073d882281d25d5044d6",
+        "enLocaleName": "grass",
+        "color": "0,255,0",
+        "color2": "0,255,0",
+        "firstLocaleName": "трава"
+    },
+    {
+        "id": "12172c24bf14a6a3406e6795248f8291",
+        "enLocaleName": "mountain",
+        "color": "127,127,127",
+        "color2": "127,127,127",
+        "firstLocaleName": "гора"
+    },
+    {
+        "id": "ef89d060798f8ab3e4e3a2e3a7322e9b",
+        "enLocaleName": "rifs",
+        "color": "127,127,127",
+        "color2": "255,174,201",
+        "firstLocaleName": "рифы"
+    },
+    {
+        "id": "c1734b0e42456ddcf57a8a46ffe4b26b",
+        "enLocaleName": "rifs2",
+        "color": "219,161,180",
+        "color2": "191,150,164",
+        "firstLocaleName": "рифы"
+    },
+    {
+        "id": "c1734b0e42456ddcc1734b0e42456ddc",
+        "enLocaleName": "cursor",
+        "color": "219,161,180",
+        "color2": "191,150,164",
+        "firstLocaleName": "курсор"
+    },
+    {
+        "id": "f57a8a46ffe4b26bf57a8a46ffe4b26b",
+        "enLocaleName": "hero",
+        "color": "255,0,0",
+        "color2": "255,0,0",
+        "firstLocaleName": "герой"
+    },
+    {
+        "id": "f57a8a46ffeaaa6bf57a8a46ffe4b26b",
+        "enLocaleName": "move",
+        "color": "255,0,0",
+        "color2": "255,0,0",
+        "firstLocaleName": "движение"
+    },
+    {
+        "id": "f5777746ffeaaa6bf57a8a46ffe4b26b",
+        "enLocaleName": "make",
+        "color": "255,0,0",
+        "color2": "255,0,0",
+        "firstLocaleName": "сделать"
+    },
+    {
+        "id": "f57a8a46ffeaaa6bf5888a46ffe4b26b",
+        "enLocaleName": "search",
+        "color": "0,0,0",
+        "color2": "0,0,0",
+        "firstLocaleName": "поиск"
+    },
+    {
+        "id": "e4e0b6546d34d75a2da2b151ee16d6f7",
+        "enLocaleName": "sand",
+        "color": "255,245,0",
+        "color2": "255,245,0",
+        "firstLocaleName": "песок"
+    },
+    {
+        "id": "15c155319f7f003c1c822b924eb9c57e",
+        "enLocaleName": "cat",
+        "color": "65,107,177",
+        "color2": "65,107,177",
+        "firstLocaleName": "коть"
+    }
+]

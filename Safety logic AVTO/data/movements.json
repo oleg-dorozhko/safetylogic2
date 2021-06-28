@@ -1,0 +1,6 @@
+[
+{"eventId":"sand_movement","statId":"time","diff":"-20"},
+{"eventId":"water_movement","statId":"oxygen","diff":"-1"},
+{"eventId":"water_movement","statId":"time","diff":"-20"},
+{"eventId":"sand_water_movement","statId":"time","diff":"-20"}
+]
