@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class MyThread implements Runnable {
+public class MyThread8 implements Runnable {
 	
 	private Cell cell=null;
 	private Cell cell2=null;
@@ -22,7 +22,7 @@ public class MyThread implements Runnable {
 	
 
 
-	public MyThread(GameModel model, MdfBufferStorage mbs,  Cell c1) throws Exception {
+	public MyThread8(GameModel model, MdfBufferStorage mbs,  Cell c1) throws Exception {
 		this.model = model;
 		this.cells = model.cells;
 		this.cell = new Cell(c1);
@@ -163,7 +163,7 @@ public class MyThread implements Runnable {
 	
 	
 	
-	public MyThread(GameModel model,  Cell c1, Cell c2) throws Exception {
+	public MyThread8(GameModel model,  Cell c1, Cell c2) throws Exception {
 		this.model = model;
 		this.cells = model.cells;
 		this.cell = new Cell(c1);
@@ -195,7 +195,7 @@ public class MyThread implements Runnable {
 		
 	}
 
-	public MyThread(GameModel gameModel, MdfBufferStorage mbs2, Cell c1, Cell c2) {
+	public MyThread8(GameModel gameModel, MdfBufferStorage mbs2, Cell c1, Cell c2) {
 		this.model = gameModel;
 		this.cells = model.cells;
 		this.cell = new Cell(c1);
@@ -358,7 +358,7 @@ this.cellM = null;
 		 		model.app.redrawCanvases();
 		 		
 		 		
-		 		//break;
+		 		break;
 		 
 			}
 			
@@ -399,8 +399,8 @@ this.cellM = null;
 		 afterSwapSecondCellClusterSize.getClusterFromCells(this.cells, cel[1]);
  		 int sz4 = afterSwapSecondCellClusterSize.global_dummy_fast_thread_border_cluster.size();
 		Logger.lo("after.cluster.second.cell.size = "+sz4);
-		
-		if(sz==1 && sz2==1 && sz3>=1 && sz4>=1) return true;
+		if((sz2>sz3) || (sz>sz4)) return true;
+		//if(sz==1 && sz2==1 && sz3>=1 && sz4>=1) return false;
 		//if(sz2>=sz3 && sz>=sz4) return true;
 		return false;
 	}

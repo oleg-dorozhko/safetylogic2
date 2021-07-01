@@ -122,33 +122,23 @@ public class GameMouseController {
 
 	public Object handleSecondaryClickCanvas0(MouseEvent event) throws Exception {
 		
-		Collections.shuffle(model.cells);
-		int n=0;
-		for(int i=0;i<GameModel.windowWidth;i++) {
-			for(int j=0;j<GameModel.windowHeight;j++) {
-				Cell c = model.cells.get(n);
-				c.x = i;
-				c.y = j;
-				n++;
-			}	
-		}
-		model.app.redrawCanvases();
-		return null;
-//		 int x = (int)event.getX();
-//         int y = (int)event.getY();
-//         
-//          int n = x/GameModel.cellWidth;
-//          int m = y/GameModel.cellHeight;
-//         
-//         //System.out.println(x/20);
-//         //System.out.println(y/20);
-//         //System.out.println(HelperRandom.strColor( model.getCellXY(x/20, y/20).getMyColor() ));
-//         
-//         model.processSecondaryClickOnCanvas0(new Cell(n,m,model.getCellXY(n, m).getMyColor()));
+		//////////////////////////////////
+		//shuffleCells();
+		//////////////////////////////////////
+
+		int x = (int)event.getX();
+          int y = (int)event.getY();
+          
+          int n = x/GameModel.cellWidth;
+          int m = y/GameModel.cellHeight;
+         
+        model.processSecondaryClickOnCanvas0(new Cell(n,m,model.getCellXY(n, m).getMyColor()));
 //          
 //         
-//		return null;
+		return null;
 	}
+
+
 
 	public Object handlePrimaryClickCanvas1(MouseEvent event) {
 		// TODO Auto-generated method stub

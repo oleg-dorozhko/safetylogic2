@@ -36,8 +36,12 @@ public class GameModel {
 	public MainApp app = null;
     public It hero;
     public It cursor;
-	public static int windowWidth = 20;
-	public static int windowHeight = 20;
+	//public static int windowWidth = 20;
+	//public static int windowHeight = 20;
+	//public static int cellWidth = 20;
+	//public static int cellHeight = 20;
+	public static int windowWidth = 10;
+	public static int windowHeight = 10;
 	public static int cellWidth = 20;
 	public static int cellHeight = 20;
 	
@@ -135,6 +139,53 @@ public class GameModel {
 //	       	}
 	       	
 	       	this.mbs  = new MdfBufferStorage(this);
+			
+		}
+	 
+	 
+	 public void initRandomCells() throws Exception {
+	    	
+	       this.cells =   new ArrayList<Cell>(); 	
+//	       
+//	       int cw = GameModel.cellWidth;
+//	       int ch = GameModel.cellHeight;
+//	       
+	       ArrayList<int[]> list = new ArrayList<int[]>();
+	       int numberOfcolors = 5;
+	       for(int i=0;i<numberOfcolors;i++) {
+	    	   list.add(HelperRandom.getRndIntColor());
+	       }
+//	       
+	       ArrayList<int[]> list2 =  new ArrayList<int[]>();
+	       for(int i=0;i<numberOfcolors;i++) {
+	    	   int[] cnt = new int[1];
+	    	   cnt[0] = HelperRandom.getRandomInt(0, numberOfcolors);
+	    	   list2.add(cnt);
+	       }
+//	       
+	       Collections.shuffle(list2);
+//	       
+	       
+	     
+	       
+	       
+	       
+	       	int counter=0;
+	       	for(int i=0;i<GameModel.windowWidth;i++) {
+	       		for(int j=0;j<GameModel.windowHeight;j++) {
+//	       		
+//	       			//int[] color = HelperRandom.iconv(Color.RED);
+//	       			
+	       			//int[] color = list.get(list2.get(counter++)[0]);
+//	       			//if(counter>=list2.size()) counter=0;
+	       			int[] color = list.get(HelperRandom.getRandomInt(0, numberOfcolors));
+	       			this.cells.add(new Cell(i,j,color));
+//	       		//	this.cells.add(new Cell(i,j,color));
+//	       		
+	       		}
+	       	}
+	       	
+	       	//this.mbs  = new MdfBufferStorage(this);
 			
 		}
 	    
@@ -2543,11 +2594,12 @@ public void processLeftChange(Cell cell, Cell cell2) {
 		  
 			//MyThread3 t= null;
 			//MyThread6 t = null;
-			MyThread t=null;
+			//MyThread t=null;
+			MyThread12 t = null;
 			try {
 				 
-				//t = new MyThread( this, mbs, cell, cell2 );
-				t = new MyThread( this, mbs, cell, cell2);
+				//t = new MyThread8( this, mbs, cell, cell2 );
+				t = new MyThread12( this, mbs, cell, cell2);
 				Thread th = new Thread(t);
 				th.start();	
 				//th.join();	

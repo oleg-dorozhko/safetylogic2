@@ -10,6 +10,7 @@ import javafx.scene.layout.VBox;
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 import javafx.event.*;
@@ -99,7 +100,7 @@ public class MainApp extends Application {
 
     
     @Override
-    public void init() {
+    public void init() throws Exception {
         
         GameModel model = new GameModel(this);
         
@@ -107,6 +108,7 @@ public class MainApp extends Application {
         
         this.controller = new GameMouseController(model);
         
+       
         //
         //ModelMap.loadData(model);
         //
@@ -992,7 +994,20 @@ Button checkIt = new Button("Look for");
     	return scene;	
     }
     
-    
+	private void shuffleCells() {
+		Collections.shuffle(model.cells);
+		int n=0;
+		for(int i=0;i<GameModel.windowWidth;i++) {
+			for(int j=0;j<GameModel.windowHeight;j++) {
+				Cell c = model.cells.get(n);
+				c.x = i;
+				c.y = j;
+				n++;
+			}	
+		}
+		model.app.redrawCanvases();
+	}
+	
     public Scene createItemEditorScene() {
     	
     	Button[] btns = new Button[5];
@@ -1012,8 +1027,26 @@ Button checkIt = new Button("Look for");
 		TextField textField1 = new TextField();
 		TextField textField2 = new TextField();
 	   	TextField textField3 = new TextField();	
+	
 	   	TextField textField4 = new TextField();
 	 	
+	   	Button shuffle = new Button("Shuffle");
+		 	shuffle.setOnAction( new EventHandler<ActionEvent>() {
+		  	        @Override
+		  	        public void handle(ActionEvent event) {
+		  	            try 
+		  	            {
+		  	            	 shuffleCells();
+		  	            }
+		  	       
+		            catch (Exception ex) {
+		                  ex.printStackTrace();
+		            }
+		        }
+		 	});
+		
+	   	
+	   	
 	   	Button loadRules = new Button("Load rules");
 	 	loadRules.setOnAction( new EventHandler<ActionEvent>() {
 	  	        @Override
@@ -1327,7 +1360,7 @@ Button checkIt = new Button("Look for");
     	line5.setAlignment(Pos.CENTER);
     	HBox line7 = new HBox( switchToRuleEditorButton, switchToFirstWindowButton);
     	line7.setAlignment(Pos.CENTER);
-    	HBox lineSubmit = new HBox(discardAllChanges, updateWhenAllChangesConfirmed,saveRules,loadRules );
+    	HBox lineSubmit = new HBox(discardAllChanges, updateWhenAllChangesConfirmed,saveRules,loadRules,shuffle );
     	lineSubmit.setAlignment(Pos.CENTER); 
     	
     	////////////////////////////////////////////////////////////////////
@@ -1419,6 +1452,15 @@ Button checkIt = new Button("Look for");
          Scene scene = new Scene(root, 686, 650,Color.rgb(0,0,0));
          root.setBackground(new Background(new BackgroundFill(Color.LIGHTGREY, null, null)));
         
+         try {
+			model.initRandomCells();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+         
+         redrawCanvases();
+         
         // btns[4]=;
          return scene;
     }

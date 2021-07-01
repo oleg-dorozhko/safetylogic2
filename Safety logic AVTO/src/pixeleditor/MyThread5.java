@@ -476,9 +476,9 @@ public class MyThread5 implements Runnable {
 	 			
 	 			
 	 			// new Objects or link to old objects ??
-	 			this.mbs.commitChanges( this.cell, this.cell2, newCellM, newRndNeigh );
+	// 			this.mbs.commitChanges( this.cell, this.cell2, newCellM, newRndNeigh );
 	 			
-	 			this.mbs.reinitialization();
+	 //			this.mbs.reinitialization();
 		
 		
 	}

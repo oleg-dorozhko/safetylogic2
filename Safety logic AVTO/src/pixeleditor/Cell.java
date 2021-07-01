@@ -112,6 +112,29 @@ public class Cell {
 	public String toString() {
 		return "["+this.x+","+this.y+"] "+this.myColor[0]+","+this.myColor[1]+","+this.myColor[2];
 	}
+
+	public int[] cloneColor(int[] color) {
+		int[] color2 = new int[4];
+		color2[0] = color[0];//(int) Math.round(color.getRed()*255.0);
+		color2[1] = color[1];//(int) Math.round(color.getGreen()*255.0);
+		color2[2] = color[2];//(int) Math.round(color.getBlue()*255.0);
+		color2[3] = color[3];
+		return color2;
+	}
+
+	public void setColor(int[] color) {
+		this.myColor = cloneColor(color);
+	}
+
+	public boolean compareColor(int[] color) {
+		//if(color==null) return false;
+		//if(this.myColor==null) return false;
+		if(color[0] != this.myColor[0]) return false;
+		if(color[1] != this.myColor[1]) return false;
+		if(color[2] != this.myColor[2]) return false;
+		if(color[3] != this.myColor[3]) return false;
+		return true;
+	}
 	
 	
 }
